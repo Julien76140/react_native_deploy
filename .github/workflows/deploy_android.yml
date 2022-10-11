@@ -20,8 +20,6 @@ jobs:
       - name: Install npm dependencies
         run: |
           npm install
-      - name: permission for gradlex
-        run: chmod +x gradlew
       - name: Build Android Release
         run: |
           cd android && ./gradlew assembleRelease
